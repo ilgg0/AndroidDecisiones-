@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText etA;
     private EditText etRE;
     private TextView txtResult;
+    private Button btnV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,17 +33,10 @@ public class MainActivity extends AppCompatActivity {
         etA = findViewById(R.id.etA);
         etRE = findViewById(R.id.etRE);
         txtResult = findViewById(R.id.txtResult);
-        Button btnVerificar = findViewById(R.id.btnV);
-
-        btnVerificar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                verificar(); 
-            }
-        });
+        btnV = findViewById(R.id.btnV);
     }
 
-    public void verificar() {
+    public void verificar(View view) {
         //para que se conviertan a minusculas
         String recubrimiento = etR.getText().toString().toLowerCase();
         String alimentacion = etA.getText().toString().toLowerCase();

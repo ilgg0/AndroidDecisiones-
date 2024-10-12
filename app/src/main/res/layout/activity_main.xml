@@ -129,7 +129,7 @@
         android:layout_marginTop="408dp"
         android:backgroundTint="#334f53"
         android:text="Verificar"
-
+        android:onClick="verificar"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.909"
